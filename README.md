@@ -26,6 +26,6 @@ csvを表示。ゆくゆくはfor文でも使ってすべての単語を一つ�
 ゆくゆくは26and1.csvのロシア語単語を読み込んでその2つ隣に日本語訳をいれるようにしたい。
 
 # 開発環境
-- Python 3.6.5 |Anaconda, Inc.| (default, Mar 29 2018, 13:32:41) [MSC v.1900 64 bi
-t (AMD64)] on win32
-- Windows7
+- Python 3.6.6 (default, Sep 12 2018, 18:26:19) [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+- Pycharm
+- Linux Mint 19 "Tara" Cinnamon
