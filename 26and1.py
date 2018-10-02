@@ -5,7 +5,7 @@ import csv
 import re
 
 # Thank you Cristian! The below libraries I made and well working:D
-from del_words import i_know
+import del_words # import i_know
 from csvScraping import show_word
 from pyDic import to_ru
 """
@@ -31,7 +31,7 @@ for text in texts:
     lemma = analyzer.parse(text)[0].normal_form
     lemma_list.append(lemma)
 
-lemma_list = list(filter(lambda d: d not in (str(i_know)), lemma_list))
+lemma_list = list(filter(lambda d: d not in (str(del_words.del_w)), lemma_list))
 freqdist = FreqDist(lemma_list)
 freqdist_list = freqdist.most_common(900)
 with open('26and1.csv', 'w', encoding = 'utf-8-sig') as file:
