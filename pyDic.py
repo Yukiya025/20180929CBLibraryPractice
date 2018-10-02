@@ -1,4 +1,5 @@
 def to_ru():
     from googletrans import Translator
     translator = Translator()
-    print(translator.translate('солдат', 'ja'))
+    ru_ja = translator.translate('солдат', 'ja')
+    print(ru_ja.text)

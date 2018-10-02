@@ -41,5 +41,5 @@ with open('26and1.csv', 'w', encoding = 'utf-8-sig') as file:
         writer.writerows([freqdist_list[n]])
 pass
 
-show_word()
-to_ru()
+show_word() # csvScraping.py
+to_ru() # pyDic.py
