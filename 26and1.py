@@ -5,9 +5,8 @@ import csv
 import re
 
 # Thank you Cristian! The below libraries I made and well working:D
-import del_words # import i_know
-from csvScraping import show_word
-from pyDic import to_ru
+import del_words
+
 """
 This file is the first.
 
@@ -19,7 +18,7 @@ This file is the first.
    lemma_list has normal_form russian words
 6. write lemma_list into csv
 """
-downloadtxt = open('26and1.txt', 'r', encoding = 'utf-8-sig')
+downloadtxt = open('26and1.txt', 'r')
 texts = downloadtxt.read()
 texts = re.sub('[.,?!()\'—]', ' ', texts)
 texts = texts.split()
@@ -33,13 +32,11 @@ for text in texts:
 
 lemma_list = list(filter(lambda d: d not in (str(del_words.del_w)), lemma_list))
 freqdist = FreqDist(lemma_list)
-freqdist_list = freqdist.most_common(900)
-with open('26and1.csv', 'w', encoding = 'utf-8-sig') as file:
+freqdist_list = freqdist.most_common(600)
+
+with open('26and1.csv', 'w') as file: # encoding = 'utf-8-sig'
     writer = csv.writer(file, lineterminator = '\n')
     writer.writerow(['Ру','Ном'])
     for n in range(0, len(freqdist_list)):
         writer.writerows([freqdist_list[n]])
 pass
-
-show_word() # csvScraping.py
-to_ru() # pyDic.py
