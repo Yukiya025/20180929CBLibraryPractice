@@ -1,7 +1,7 @@
 # Thank you, Christian!
 This repository is inspired by your "20180929Python Library Lesson"!
 The original is [Here](https://github.com/Yukiya025/26and1)
-
+Repository name: 20180929CBLibraryPractice
 # ようこそ
 このリポジトリは、ロシアのМаксим Горький作、 Двадцать шесть и однаを読むためのものです。Djangoを使って公開することが目標。
 まだ開発途中ですが、リポジトリ内のファイルの説明をします。
