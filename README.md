@@ -15,19 +15,14 @@ Repository name: 20180929CBLibraryPractice
 ## 3. 26and1.txt
 Двадцать шесть и одна本文です。26and1.pyがこれを読み込みます。
 
-## 4. csvScraping.py
-csvを表示。ゆくゆくはfor文でも使ってすべての単語を一つずつ拾うようにする。
-20181002: csvファイルの0-9番目のロシア語をTerminalに表示。
-201810xx: PyDic.pyと統合する。
+## 4. 26and1_600.txt
+Яндекс Переводчикで翻訳した日本語が入っている。
 
 ## 5. del_words.py
 26and1.pyで拾ってほしくない単語 (前置詞や私がすでに覚えている単語など) を格納するためのファイル。どんどん追加予定。
 
-## 6. pyDic.py
-[googletrans 2.3.0](https://pypi.org/project/googletrans/)を使って単語の日本語訳をAnaconda Promptに出力。
-ゆくゆくは26and1.csvのロシア語単語を読み込んでその2つ隣に日本語訳をいれるようにしたい。
-20181002: 'солдат'の日本語訳のみを表示。
-201810xx: csvファイルからロシア語を読み込むようにしたい。
+## 6. addJP.py
+26and1.csvに26and1_600.txtを追記する。
 
 # 開発環境
 - Python 3.6.6 (default, Sep 12 2018, 18:26:19) [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
